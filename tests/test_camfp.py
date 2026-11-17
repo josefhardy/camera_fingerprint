@@ -150,7 +150,7 @@ def test_constrained_layer_and_training(cameras):
     layer.constrain()
     w = layer.weight.detach()
     assert torch.allclose(w[:, :, 2, 2], torch.tensor(-1.0))
-    assert torch.allclose(w.sum(dim=(2, 3)), torch.zeros(4), atol=1e-5)
+    assert torch.allclose(w.sum(dim=(2, 3)), torch.zeros(4, 3), atol=1e-5)  # -1 centre + 1 rest
 
     images = [photo(c, s) for c in cameras for s in range(3)]
     labels = [i for i in range(len(cameras)) for _ in range(3)]
