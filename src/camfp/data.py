@@ -25,7 +25,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".tif", ".tiff"}
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".heic", ".heif"}
 
 VISION_PLATFORMS = {
     "flat": ("native", "flat"),

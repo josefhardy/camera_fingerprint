@@ -13,6 +13,13 @@ from __future__ import annotations
 import numpy as np
 from PIL import Image
 
+try:  # iPhone photos (HEIC) need this optional plugin
+    from pillow_heif import register_heif_opener
+
+    register_heif_opener()
+except ImportError:
+    pass
+
 
 def center_crop(arr: np.ndarray, size: int) -> np.ndarray | None:
     h, w = arr.shape[:2]

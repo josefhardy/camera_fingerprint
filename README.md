@@ -97,9 +97,9 @@ data/own/Apple_iPhone13_josef/IMG_0001.jpg
 data/own/Apple_iPhone13_josef/flat/IMG_0101.jpg
 ```
 
-Transfer original files, not compressed copies. iPhones save HEIC by default, so either set
-the camera to *Most Compatible* (JPEG) before shooting or install `pillow-heif`. Only
-include devices whose owners agree.
+Transfer original files (cable or AirDrop), not copies sent through WhatsApp or email,
+which are compressed. iPhone HEIC files are supported. Only include devices whose owners
+agree.
 
 ## Running
 
